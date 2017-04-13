@@ -18,4 +18,4 @@ Frugal intelligently suggets recipes, alcohol choices & luxury items that fit wi
 - <b>Database:</b> Google Cloud using SQL
 
 ## Deliverable 1
-- [Planning](https://docs.google.com/document/d/1xgHh4U2LncXS1-J0BflOVzH5aJy67F_XifBfB8zvSbE/edit?usp=sharing)
+- [Planning](https://docs.google.com/document/d/19UgT-hq26HcAHsDE788xcq9QQZKAm8CONTQ7IFLFlWY/edit?usp=sharing)
