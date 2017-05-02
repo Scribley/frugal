@@ -27,7 +27,7 @@ User::User(string name, int age, bool gender) {
     
 }
 
-void User::setName(){
+void User::setName(){ 
     
 }
 
