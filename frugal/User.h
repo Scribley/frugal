@@ -18,16 +18,19 @@
 
 class User {
 public:
-    User(std::string name, int age, bool gender);
+    User(int userID, std::string name, int age, bool gender, std::string password);
     
+    int userID;
     std::string name;
     int age;
     bool gender; //true = male
+    std::string password;
+    
     
     void setName();
     void setAge();
     void setGender();
-    
+    void print();    
     
     
     

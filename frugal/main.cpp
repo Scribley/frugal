@@ -21,8 +21,8 @@ using namespace std;
  */
 int main(int argc, char** argv) {
     
-    User u("Logan", 20, true);
-    
+    User u(123, "Logan", 20, true, "giday");
+    u.print();
     return 0;
 }
 
