@@ -10,7 +10,7 @@
  *
  * Created on 2 May 2017, 11:47 AM
  */
-
+#include "User.h"
 #include <cstdlib>
 #include <iostream>
 
@@ -21,7 +21,8 @@ using namespace std;
  */
 int main(int argc, char** argv) {
     
-    cout << "hello world" << endl;
+    User u("Logan", 20, true);
+    
     return 0;
 }
 
