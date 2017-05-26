@@ -17,25 +17,30 @@
 
 using namespace std;
 
-User::User(int userID, string name, int age, bool gender, string password) {
+User::User() {}
+
+void User::setUserID(int userID){
     this->userID=userID;
+}
+
+void User::setName(string name){ 
     this->name=name;
-    this->age=age;
-    this->gender=gender;
+}
+
+void User::setEmail(string email){
+    this->email=email;
+}
+
+void User::setPassword(std::string password){
     this->password=password;
-     
 }
 
-void User::setName(){ 
-
-}
-
-void User::setAge(){
-    
+void User::setGender(std::string gender){
+    this->gender=gender;
 }
 
 void User::print(){
-    cout << userID << endl << name << endl << age <<endl << gender << endl << password << endl;
+    cout << userID << endl << name << endl << email <<endl << password << endl << gender << endl;
 }
 
 //User::User(const User& orig) {

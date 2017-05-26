@@ -15,21 +15,24 @@
 #define USER_H
 #include <string>
 
+using namespace std;
 
 class User {
 public:
-    User(int userID, std::string name, int age, bool gender, std::string password);
+    User();
     
     int userID;
-    std::string name;
-    int age;
-    bool gender; //true = male
+    string name;
+    std::string gender;
+    std::string email;
     std::string password;
     
     
-    void setName();
-    void setAge();
-    void setGender();
+    void setUserID(int userID);
+    void setName(string name);
+    void setGender(std::string gender);
+    void setEmail(std::string email);
+    void setPassword(std::string password);
     void print();    
     
     

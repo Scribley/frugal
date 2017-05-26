@@ -21,7 +21,9 @@ using namespace std;
  */
 int main(int argc, char** argv) {
     
-    User u(123, "Logan", 20, true, "giday");
+    User u;
+    u.setUserID(123);
+    u.setName("1st user");
     u.print();
     return 0;
 }
