@@ -12,13 +12,44 @@
  */
 
 #include "Recipe.h"
+#include <string>
+#include <iostream>
 
-Recipe::Recipe() {
+using namespace std;
+
+Recipe::Recipe() {}
+
+void Recipe::setRecipeID(int recipeID){
+    this->recipeID=recipeID;
 }
 
+void Recipe::setTitle(string title){
+    this->title=title;
+}
 
+void Recipe::setDescription(string description){
+    this->description=description;
+}
 
+void Recipe::setMethod(string method){
+    this->method=method;
+}
 
+void Recipe::setAuthor(string author){
+    this->author=author;
+}
+
+void Recipe::setTags(string tags){
+    this->tags=tags;
+}
+
+void Recipe::setIngredients(string ingredients) {
+    this->ingredients=ingredients;
+}
+
+void Recipe::print(){
+    cout << recipeID << endl << title << endl;
+}
 
 
 
