@@ -7,6 +7,7 @@
       <itemPath>Ingredient.h</itemPath>
       <itemPath>Recipe.h</itemPath>
       <itemPath>Recipe_Ingredients.h</itemPath>
+      <itemPath>SOCIConnection.h</itemPath>
       <itemPath>Tag.h</itemPath>
       <itemPath>User.h</itemPath>
     </logicalFolder>
@@ -68,6 +69,7 @@
       <itemPath>Ingredient.cpp</itemPath>
       <itemPath>Recipe.cpp</itemPath>
       <itemPath>Recipe_Ingredients.cpp</itemPath>
+      <itemPath>SOCIConnection.cpp</itemPath>
       <itemPath>Tag.cpp</itemPath>
       <itemPath>User.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
@@ -124,6 +126,10 @@
       </item>
       <item path="Recipe_Ingredients.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="SOCIConnection.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SOCIConnection.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Tag.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Tag.h" ex="false" tool="3" flavor2="0">
@@ -166,6 +172,10 @@
       <item path="Recipe_Ingredients.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Recipe_Ingredients.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SOCIConnection.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SOCIConnection.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Tag.cpp" ex="false" tool="1" flavor2="0">
       </item>

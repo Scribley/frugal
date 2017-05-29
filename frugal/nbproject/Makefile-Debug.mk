@@ -35,8 +35,11 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Ingredient.o \
 	${OBJECTDIR}/Recipe.o \
+	${OBJECTDIR}/Recipe_Ingredients.o \
 	${OBJECTDIR}/SOCIConnection.o \
+	${OBJECTDIR}/Tag.o \
 	${OBJECTDIR}/User.o \
 	${OBJECTDIR}/main.o
 
@@ -65,15 +68,30 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/frugal: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/frugal ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+${OBJECTDIR}/Ingredient.o: Ingredient.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I/usr/local/include/soci -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Ingredient.o Ingredient.cpp
+
 ${OBJECTDIR}/Recipe.o: Recipe.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -I/usr/local/include/soci -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Recipe.o Recipe.cpp
 
+${OBJECTDIR}/Recipe_Ingredients.o: Recipe_Ingredients.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I/usr/local/include/soci -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Recipe_Ingredients.o Recipe_Ingredients.cpp
+
 ${OBJECTDIR}/SOCIConnection.o: SOCIConnection.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -I/usr/local/include/soci -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/SOCIConnection.o SOCIConnection.cpp
+
+${OBJECTDIR}/Tag.o: Tag.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I/usr/local/include/soci -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tag.o Tag.cpp
 
 ${OBJECTDIR}/User.o: User.cpp
 	${MKDIR} -p ${OBJECTDIR}
