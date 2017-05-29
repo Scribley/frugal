@@ -4,8 +4,10 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>Ingredient.h</itemPath>
       <itemPath>Recipe.h</itemPath>
-      <itemPath>SOCIConnection.h</itemPath>
+      <itemPath>Recipe_Ingredients.h</itemPath>
+      <itemPath>Tag.h</itemPath>
       <itemPath>User.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -63,8 +65,10 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Ingredient.cpp</itemPath>
       <itemPath>Recipe.cpp</itemPath>
-      <itemPath>SOCIConnection.cpp</itemPath>
+      <itemPath>Recipe_Ingredients.cpp</itemPath>
+      <itemPath>Tag.cpp</itemPath>
       <itemPath>User.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
@@ -108,194 +112,21 @@
           </linkerAddLib>
         </linkerTool>
       </compileType>
-      <item path="/usr/local/include/soci/backend-loader.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
+      <item path="Ingredient.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="/usr/local/include/soci/bind-values.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/blob-exchange.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/blob.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/boost-fusion.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/boost-gregorian-date.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/boost-optional.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/boost-tuple.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/connection-parameters.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/connection-pool.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/empty/soci-empty.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/error.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/exchange-traits.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/into-type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/into.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/once-temp-type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/prepare-temp-type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/procedure.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/query_transformation.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/ref-counted-prepare-info.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/ref-counted-statement.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/row-exchange.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/row.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/rowid-exchange.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/rowid.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/rowset.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/session.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/soci-backend.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/soci-config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/soci-platform.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/soci-simple.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/soci.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/statement.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/transaction.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/type-conversion-traits.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/type-conversion.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/type-holder.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/type-ptr.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/unsigned-types.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/use-type.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/use.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/values-exchange.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/values.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/version.h" ex="false" tool="3" flavor2="0">
+      <item path="Ingredient.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Recipe.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Recipe.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="SOCIConnection.cpp" ex="false" tool="1" flavor2="0">
+      <item path="Recipe_Ingredients.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="SOCIConnection.h" ex="false" tool="3" flavor2="0">
+      <item path="Recipe_Ingredients.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Tag.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Tag.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="User.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -324,194 +155,21 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="/usr/local/include/soci/backend-loader.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
+      <item path="Ingredient.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="/usr/local/include/soci/bind-values.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/blob-exchange.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/blob.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/boost-fusion.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/boost-gregorian-date.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/boost-optional.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/boost-tuple.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/connection-parameters.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/connection-pool.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/empty/soci-empty.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/error.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/exchange-traits.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/into-type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/into.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/once-temp-type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/prepare-temp-type.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/procedure.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/query_transformation.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/ref-counted-prepare-info.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/ref-counted-statement.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/row-exchange.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/row.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/rowid-exchange.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/rowid.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/rowset.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/session.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/soci-backend.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/soci-config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/soci-platform.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/soci-simple.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/soci.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/statement.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/transaction.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/type-conversion-traits.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/type-conversion.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/type-holder.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/type-ptr.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/unsigned-types.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/use-type.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/use.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/values-exchange.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/values.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="/usr/local/include/soci/version.h" ex="false" tool="3" flavor2="0">
+      <item path="Ingredient.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Recipe.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Recipe.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="SOCIConnection.cpp" ex="false" tool="1" flavor2="0">
+      <item path="Recipe_Ingredients.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="SOCIConnection.h" ex="false" tool="3" flavor2="0">
+      <item path="Recipe_Ingredients.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Tag.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Tag.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="User.cpp" ex="false" tool="1" flavor2="0">
       </item>

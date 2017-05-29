@@ -43,9 +43,3 @@ void User::print(){
     cout << userID << endl << name << endl << email <<endl << password << endl << gender << endl;
 }
 
-//User::User(const User& orig) {
-//}
-//
-//User::~User() {
-//}
-

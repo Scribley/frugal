@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /* 
  * File:   Recipe.cpp
  * Author: sealo
@@ -39,23 +33,17 @@ void Recipe::setAuthor(string author){
     this->author=author;
 }
 
-void Recipe::setTags(string tags){
-    this->tags=tags;
-}
+//void Recipe::setTags(string tags){
+//    this->tags=tags;
+//}
+//
+//void Recipe::setIngredients(string ingredients) {
+//    this->ingredients=ingredients;
+//}
 
-void Recipe::setIngredients(string ingredients) {
-    this->ingredients=ingredients;
-}
+
 
 void Recipe::print(){
     cout << recipeID << endl << title << endl;
 }
-
-
-
-//Recipe::Recipe(const Recipe& orig) {
-//}
-//
-//Recipe::~Recipe() {
-//}
 
