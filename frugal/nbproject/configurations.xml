@@ -4,8 +4,8 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>MySQLConnection.h</itemPath>
       <itemPath>Recipe.h</itemPath>
+      <itemPath>SQLAPIConnection.h</itemPath>
       <itemPath>User.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -15,8 +15,8 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>MySQLConnection.cpp</itemPath>
       <itemPath>Recipe.cpp</itemPath>
+      <itemPath>SQLAPIConnection.cpp</itemPath>
       <itemPath>User.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
@@ -49,13 +49,13 @@
           <standard>8</standard>
         </ccTool>
       </compileType>
-      <item path="MySQLConnection.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="MySQLConnection.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Recipe.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Recipe.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SQLAPIConnection.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SQLAPIConnection.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="User.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -84,13 +84,13 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="MySQLConnection.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="MySQLConnection.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Recipe.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Recipe.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SQLAPIConnection.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SQLAPIConnection.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="User.cpp" ex="false" tool="1" flavor2="0">
       </item>

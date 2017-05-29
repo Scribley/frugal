@@ -5,20 +5,20 @@
  */
 
 /* 
- * File:   SQLAPIConnection.cpp
+ * File:   SOCIConnection.cpp
  * Author: sealo
  * 
  * Created on 29 May 2017, 2:49 PM
  */
 
-#include "SQLAPIConnection.h"
+#include "SOCIConnection.h"
 
-SQLAPIConnection::SQLAPIConnection() {
+SOCIConnection::SOCIConnection() {
 }
 
-SQLAPIConnection::SQLAPIConnection(const SQLAPIConnection& orig) {
+SOCIConnection::SOCIConnection(const SOCIConnection& orig) {
 }
 
-SQLAPIConnection::~SQLAPIConnection() {
+SOCIConnection::~SOCIConnection() {
 }
 
