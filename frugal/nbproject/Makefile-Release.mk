@@ -36,7 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/Recipe.o \
-	${OBJECTDIR}/SQLAPIConnection.o \
+	${OBJECTDIR}/SOCIConnection.o \
 	${OBJECTDIR}/User.o \
 	${OBJECTDIR}/main.o
 
@@ -70,10 +70,10 @@ ${OBJECTDIR}/Recipe.o: Recipe.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Recipe.o Recipe.cpp
 
-${OBJECTDIR}/SQLAPIConnection.o: SQLAPIConnection.cpp
+${OBJECTDIR}/SOCIConnection.o: SOCIConnection.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/SQLAPIConnection.o SQLAPIConnection.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/SOCIConnection.o SOCIConnection.cpp
 
 ${OBJECTDIR}/User.o: User.cpp
 	${MKDIR} -p ${OBJECTDIR}

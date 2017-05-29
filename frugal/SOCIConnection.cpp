@@ -12,13 +12,15 @@
  */
 
 #include "SOCIConnection.h"
+#include "soci.h"
 
 SOCIConnection::SOCIConnection() {
+    
 }
 
-SOCIConnection::SOCIConnection(const SOCIConnection& orig) {
-}
-
-SOCIConnection::~SOCIConnection() {
-}
+//SOCIConnection::SOCIConnection(const SOCIConnection& orig) {
+//}
+//
+//SOCIConnection::~SOCIConnection() {
+//}
 
