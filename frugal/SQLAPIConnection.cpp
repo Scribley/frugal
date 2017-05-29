@@ -5,20 +5,20 @@
  */
 
 /* 
- * File:   MySQLConnection.cpp
+ * File:   SQLAPIConnection.cpp
  * Author: sealo
  * 
  * Created on 29 May 2017, 2:49 PM
  */
 
-#include "MySQLConnection.h"
+#include "SQLAPIConnection.h"
 
-MySQLConnection::MySQLConnection() {
+SQLAPIConnection::SQLAPIConnection() {
 }
 
-MySQLConnection::MySQLConnection(const MySQLConnection& orig) {
+SQLAPIConnection::SQLAPIConnection(const SQLAPIConnection& orig) {
 }
 
-MySQLConnection::~MySQLConnection() {
+SQLAPIConnection::~SQLAPIConnection() {
 }
 

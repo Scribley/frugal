@@ -5,23 +5,23 @@
  */
 
 /* 
- * File:   MySQLConnection.h
+ * File:   SQLAPIConnection.h
  * Author: sealo
  *
  * Created on 29 May 2017, 2:49 PM
  */
 
-#ifndef MYSQLCONNECTION_H
-#define MYSQLCONNECTION_H
+#ifndef SQLAPICONNECTION_H
+#define SQLAPICONNECTION_H
 
-class MySQLConnection {
+class SQLAPIConnection {
 public:
-    MySQLConnection();
-    MySQLConnection(const MySQLConnection& orig);
-    virtual ~MySQLConnection();
+    SQLAPIConnection();
+    SQLAPIConnection(const SQLAPIConnection& orig);
+    virtual ~SQLAPIConnection();
 private:
 
 };
 
-#endif /* MYSQLCONNECTION_H */
+#endif /* SQLAPICONNECTION_H */
 
