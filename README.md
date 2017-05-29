@@ -19,3 +19,5 @@ Frugal intelligently suggets recipes, alcohol choices & luxury items that fit wi
 
 ## Deliverable 1
 - [Planning](https://docs.google.com/document/d/19UgT-hq26HcAHsDE788xcq9QQZKAm8CONTQ7IFLFlWY/edit?usp=sharing)
+
+## Deliverable 2
