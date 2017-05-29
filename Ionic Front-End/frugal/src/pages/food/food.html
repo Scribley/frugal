@@ -2,7 +2,7 @@
   <ion-navbar color="secondary">
     <ion-title>Food</ion-title>
     <ion-buttons right>
-      <button ion-button icon-only (click)=goToSettingsPage()>
+      <button ion-button icon-only (click)="openModal()">
         <ion-icon name="ios-settings"></ion-icon>
       </button>
     </ion-buttons>
@@ -10,11 +10,23 @@
 </ion-header>
 
 <ion-content>
+
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+  <ion-refresher-content
+    pullingIcon="arrow-dropdown"
+    pullingText="Pull to refresh"
+    refreshingSpinner="circles"
+    refreshingText="Refreshing meals...">
+  </ion-refresher-content>
+</ion-refresher>
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+  <button ion-item item-right *ngFor= "let w of week; let i = index;" [navPush]=week[i].short>
+    <ion-thumbnail item-left>
+      <img src={{imgURL[i]}}>
+    </ion-thumbnail>
+    <h2>{{w.day}}</h2>
+    <h3>{{meals[i].title}}</h3>
+    <p>{{meals[i].description}}</p>
+  </button>
+</ion-list>
 </ion-content>

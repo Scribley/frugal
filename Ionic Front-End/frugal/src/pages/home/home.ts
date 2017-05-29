@@ -1,16 +1,19 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { ModalController } from 'ionic-angular';
 import { SettingsPage } from '../settings/settings';
+import { FoodPage } from '../food/food';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
+  foodPage = FoodPage;
 
-  constructor(public navCtrl: NavController) {}
+  constructor(public modalCtrl: ModalController) { }
 
-  goToSettingsPage(){
-    this.navCtrl.push(SettingsPage);
+  openModal() {
+    let myModal = this.modalCtrl.create(SettingsPage);
+    myModal.present();
   }
 }

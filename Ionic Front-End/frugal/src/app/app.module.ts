@@ -5,10 +5,17 @@ import { MyApp } from './app.component';
 
 import { FoodPage } from '../pages/food/food';
 import { DrinksPage } from '../pages/drinks/drinks';
-import { BudgetPage } from '../pages/budget/budget';
+import { GroceriesPage } from '../pages/groceries/groceries';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { SettingsPage } from '../pages/settings/settings';
+import { Mon } from '../pages/recipes/mon/mon';
+import { Tues } from '../pages/recipes/tues/tues';
+import { Wed } from '../pages/recipes/wed/wed';
+import { Thurs } from '../pages/recipes/thurs/thurs';
+import { Fri } from '../pages/recipes/fri/fri';
+import { Sat } from '../pages/recipes/sat/sat';
+import { Sun } from '../pages/recipes/sun/sun';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -18,10 +25,18 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     FoodPage,
     DrinksPage,
-    BudgetPage,
+    GroceriesPage,
     HomePage,
     TabsPage,
-    SettingsPage
+    SettingsPage,
+    Mon,
+    Tues,
+    Wed,
+    Thurs,
+    Fri,
+    Sat,
+    Sun
+
   ],
   imports: [
     BrowserModule,
@@ -32,10 +47,17 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     FoodPage,
     DrinksPage,
-    BudgetPage,
+    GroceriesPage,
     HomePage,
     TabsPage,
-    SettingsPage
+    SettingsPage,
+    Mon,
+    Tues,
+    Wed,
+    Thurs,
+    Fri,
+    Sat,
+    Sun
   ],
   providers: [
     StatusBar,

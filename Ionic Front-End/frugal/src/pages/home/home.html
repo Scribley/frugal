@@ -2,7 +2,7 @@
   <ion-navbar color="secondary">
     <ion-title>Frugal</ion-title>
     <ion-buttons right>
-      <button ion-button icon-only (click)=goToSettingsPage()>
+      <button ion-button icon-only (click)="openModal()">
         <ion-icon name="ios-settings"></ion-icon>
       </button>
     </ion-buttons>
@@ -12,11 +12,91 @@
 
 <ion-content>
   <ion-card>
-    <ion-card-header>
-      Hey Gabe!
-    </ion-card-header>
-    <ion-card-content>
-      Here's your budget for the week
-    </ion-card-content>
+      <button ion-item (click)="openModal()">
+        <ion-avatar item-left>
+          <img src="img/gravatar.jpg">
+        </ion-avatar>
+        <h2>Hey Gabe!</h2>
+        <p>Here's your weekly budget</p>
+      </button>
+      <ion-item>
+        <div class="stacked-bar-graph">
+          <span style="width:60%" class="bar-1"></span>
+          <span style="width:30%" class="bar-2"></span>
+          <span style="width:10%" class="bar-3"></span>
+        </div>
+      </ion-item>
   </ion-card>
+
+
+  <ion-card>
+      <button ion-item [navPush]="foodPage">
+      <ion-icon item-left></ion-icon>
+      Your meals for this week
+    </button>
+
+    <ion-slides pager>
+
+  <ion-slide>
+    <div class=card-background-page>
+      <img class=img src="img/food7.jpg"/>
+      <div class="card-title">Monday</div>
+      <div class="card-subtitle">Chicken Stir fry</div>
+  </div>
+  </ion-slide>
+
+  <ion-slide>
+    <div class=card-background-page>
+      <img class=img src="img/food5.jpg"/>
+      <div class="card-title">Tuesday</div>
+      <div class="card-subtitle">Burgers</div>
+  </div>
+  </ion-slide>
+
+  <ion-slide>
+    <div class=card-background-page>
+      <img class=img src="img/food6.jpg"/>
+      <div class="card-title">Wednesday</div>
+      <div class="card-subtitle">Lasagne</div>
+  </div>
+  </ion-slide>
+
+<ion-slide >
+  <div class=card-background-page>
+    <img class=img src="img/food3.jpg"/>
+    <div class="card-title">Thursday</div>
+    <div class="card-subtitle">Spaghetti Bolognese</div>
+</div>
+</ion-slide>
+
+<ion-slide >
+  <div class=card-background-page>
+    <img class=img src="img/food4.jpg"/>
+    <div class="card-title">Friday</div>
+    <div class="card-subtitle">Vegetable Pasta</div>
+</div>
+</ion-slide>
+
+<ion-slide >
+  <div class=card-background-page>
+    <img class=img src="img/food1.jpg"/>
+    <div class="card-title">Saturday</div>
+    <div class="card-subtitle">Salmon</div>
+</div>
+</ion-slide>
+
+
+<ion-slide >
+  <div class=card-background-page>
+    <img class=img src="img/food2.jpg"/>
+    <div class="card-title">Sunday</div>
+    <div class="card-subtitle">Eggs on Toast</div>
+</div>
+</ion-slide>
+
+</ion-slides>
+  </ion-card>
+
+
+
 </ion-content>
