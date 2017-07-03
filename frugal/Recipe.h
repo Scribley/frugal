@@ -29,6 +29,11 @@ public:
     void setMethod(string method);
     void setAuthor(string author);
     
+    int getRecipeID();
+    string getTitle();
+    string getDescription();
+    string getMethod();
+    string getAuthor();
     
     
 //    void setTags(string tags);

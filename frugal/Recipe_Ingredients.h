@@ -14,16 +14,20 @@ using namespace std;
 class Recipe_Ingredients {
 public:
     Recipe_Ingredients();
+    Recipe_Ingredients(int recipeID, int ingredientID, double quantity);
     
-//    int recipeID;
+    int recipeID;
     int ingredientID;
     double quantity;
     double totalPrice;
     
+    void setRecipeID(int ID);
     void setQuantity(double quantity);
     void setIngredientID(int ID);
     
     double getQuantity();
+    int getRecipeID();
+    int getIngredientID();
     
     void calcTotalPrice(double quantity, double price_per_unit, string unit);
     

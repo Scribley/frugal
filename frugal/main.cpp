@@ -24,7 +24,12 @@ int main(int argc, char** argv) {
     Recipe r;
     r.setRecipeID(321);
     r.setTitle("1st recipe");
+    r.setDescription("lorem ipsum");
+    r.setAuthor("Kerridge");
+    r.setMethod("(1) blend ingredients (2) cook ingredients (3) eat whatever comes out");
     r.print();
+    
+    
     return 0;
 }
 

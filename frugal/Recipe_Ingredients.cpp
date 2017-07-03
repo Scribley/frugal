@@ -14,6 +14,20 @@ using namespace std;
 
 Recipe_Ingredients::Recipe_Ingredients() {}
 
+Recipe_Ingredients::Recipe_Ingredients(int recipeID, int ingredientID, double quantity) {
+    this->recipeID = recipeID;
+    this->quantity = quantity;
+    this->ingredientID = ingredientID;
+}
+
+//-------------------
+//    MUTATORS
+//-------------------
+
+void Recipe_Ingredients::setRecipeID(int ID) {
+    this->recipeID = ID;
+}
+
 // set the quantity required for the ingredient
 void Recipe_Ingredients::setQuantity(double quantity) {
     this->quantity = quantity;
@@ -24,8 +38,20 @@ void Recipe_Ingredients::setIngredientID(int ID) {
     this->ingredientID = ID;
 }
 
+//-------------------
+//    ACCESSORS
+//-------------------
+
 double Recipe_Ingredients::getQuantity() {
     return quantity;
+}
+
+int Recipe_Ingredients::getIngredientID() {
+    return ingredientID;
+}
+
+int Recipe_Ingredients::getRecipeID() {
+    return recipeID;
 }
 
 // calculates the total price of the ingredient required for the recipe
